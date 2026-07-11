@@ -49,14 +49,22 @@ Native macOS SwiftUI app — floating window, manually launched.
 - [x] SwiftUI app scaffold (floating window, basic layout)
 - [x] GPU utilization display with real-time polling (verified: 90%+ under Whisper load)
 - [x] Token usage display per framework (TokenChartView + adapters)
-- [x] Rolling ~1hr graph for key metrics (CircularBuffer, 3600 samples)
+- [x] Rolling 5-min graph for key metrics (CircularBuffer, 300 samples)
 - [x] Framework selector (Whisper via Unix socket, Ollama via REST)
+- [x] README split — concise repo README + detailed docs/gpu-architecture.md
+- [x] Pushed to GitHub: github.com/vebutton/gpu-monitor (public, clean history)
 - [ ] Claude Ultra review on completed codebase (before 2026-05-05)
 
 ## Session State
-**Last session:** 2026-04-25 (CLI)
+**Last session:** 2026-04-27 (CLI)
 
-### What was accomplished
+### What was accomplished this session
+- Moved detailed README to `docs/gpu-architecture.md`, created concise repo README
+- Created public repo at github.com/vebutton/gpu-monitor
+- Clean initial commit (27 files, no template scaffold history)
+- Pushed to GitHub
+
+### Previous sessions (cumulative)
 - Phases 1-3 complete: full working app
 - SPM project at `src/GPUMonitor/` (Package.swift, CIOReport system library target)
 - GPU utilization via IOReport GPUPH channel (P-state residency, no sudo)
@@ -66,15 +74,19 @@ Native macOS SwiftUI app — floating window, manually launched.
 - Swift Charts for GPU + framework metrics
 - Floating window with always-on-top pin toggle
 - Framework picker (None / Whisper / Ollama)
+- CircularBuffer reduced from 3600 (1hr) to 300 (5min) per user feedback
 
 ### Build & run
 ```
 cd src/GPUMonitor && swift build && .build/debug/GPUMonitor
 ```
 
+### GitHub
+- Repo: https://github.com/vebutton/gpu-monitor
+- Branch: main (single clean initial commit)
+
 ### Implementation plan
 `.claude/plans/linear-sparking-moore.md`
 
 ### Next steps
 - **Claude Ultra review** on completed codebase (before 2026-05-05)
-- Optional: git init + first commit, push to GitHub
