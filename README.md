@@ -47,6 +47,8 @@ uv run scripts/whisper_bridge.py audio.m4a \
 The bridge accepts the same flags as the `whisper` CLI and writes output in all
 standard formats (txt, vtt, srt, json, tsv).
 
+![GPU Monitor tracking a Whisper transcription](docs/images/GPUmonitor-WhisperFramework.png)
+
 ### Ollama
 
 Polls the Ollama REST API at `localhost:11434` to show active models and VRAM
