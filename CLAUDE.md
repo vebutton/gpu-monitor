@@ -53,12 +53,18 @@ Native macOS SwiftUI app — floating window, manually launched.
 - [x] Framework selector (Whisper via Unix socket, Ollama via REST)
 - [x] README split — concise repo README + detailed docs/gpu-architecture.md
 - [x] Pushed to GitHub: github.com/vebutton/gpu-monitor (public, clean history)
+- [x] Real-world validation: transcribed a live Zoom recording with Whisper (`large`/mps) while GPU Monitor tracked utilization end-to-end; screenshot in `collateral/GPUmonitor-WhisperFramework.png`
 - [ ] Claude Ultra review on completed codebase (before 2026-05-05)
 
 ## Session State
-**Last session:** 2026-04-27 (CLI)
+**Last session:** 2026-07-11 (CLI)
 
 ### What was accomplished this session
+- README updated with `uv`-based Python setup for the Whisper bridge (`openai-whisper` dependency)
+- End-to-end validation: transcribed a Zoom recording ("Support for large-scale SQL database") via `transcribe-audio` project's `whisper_bridge.py` while GPU Monitor ran live; output landed in `~/Development/AI/agents/transcribe-audio/output/`
+- Captured screenshot of GPU Monitor + completed transcription: `collateral/GPUmonitor-WhisperFramework.png`
+
+### Previous sessions (cumulative)
 - Moved detailed README to `docs/gpu-architecture.md`, created concise repo README
 - Created public repo at github.com/vebutton/gpu-monitor
 - Clean initial commit (27 files, no template scaffold history)
