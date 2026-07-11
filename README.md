@@ -27,11 +27,19 @@ swift build
 
 ### Whisper
 
+Requires Python 3 with `openai-whisper` installed (pulls in `torch` as a
+dependency), managed via `uv`:
+
+```bash
+uv venv
+uv pip install openai-whisper
+```
+
 Monitor transcription progress via the included Python bridge:
 
 ```bash
 # Select "Whisper" in the app's framework picker, then run:
-python3 scripts/whisper_bridge.py audio.m4a \
+uv run scripts/whisper_bridge.py audio.m4a \
     --model large --device mps --fp16 False \
     --output_dir output/
 ```
