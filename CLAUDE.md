@@ -54,7 +54,7 @@ Native macOS SwiftUI app — floating window, manually launched.
 - [x] README split — concise repo README + detailed docs/gpu-architecture.md
 - [x] Pushed to GitHub: github.com/vebutton/gpu-monitor (public, clean history)
 - [x] Real-world validation: transcribed a live Zoom recording with Whisper (`large`/mps) while GPU Monitor tracked utilization end-to-end; screenshot in `collateral/GPUmonitor-WhisperFramework.png`
-- [ ] Claude Ultra review on completed codebase (before 2026-05-05)
+- [x] ~~Claude Ultra review on completed codebase~~ — credit window (before 2026-05-05) expired unused; dropped, not rescheduled
 
 ## Session State
 **Last session:** 2026-07-11 (CLI)
@@ -95,4 +95,4 @@ cd src/GPUMonitor && swift build && .build/debug/GPUMonitor
 `.claude/plans/linear-sparking-moore.md`
 
 ### Next steps
-- **Claude Ultra review** on completed codebase (before 2026-05-05)
+- None currently open
